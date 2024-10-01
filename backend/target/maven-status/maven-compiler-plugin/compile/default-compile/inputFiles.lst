@@ -1,0 +1,9 @@
+/home/gregoriohd/software/applications/spring/essia_api/src/main/java/br/com/gregoriohd/EssiaApiApplication.java
+/home/gregoriohd/software/applications/spring/essia_api/src/main/java/br/com/gregoriohd/controller/ArquivoController.java
+/home/gregoriohd/software/applications/spring/essia_api/src/main/java/br/com/gregoriohd/controller/DiretorioController.java
+/home/gregoriohd/software/applications/spring/essia_api/src/main/java/br/com/gregoriohd/entity/Arquivo.java
+/home/gregoriohd/software/applications/spring/essia_api/src/main/java/br/com/gregoriohd/entity/Diretorio.java
+/home/gregoriohd/software/applications/spring/essia_api/src/main/java/br/com/gregoriohd/repository/ArquivoRepository.java
+/home/gregoriohd/software/applications/spring/essia_api/src/main/java/br/com/gregoriohd/repository/DiretorioRepository.java
+/home/gregoriohd/software/applications/spring/essia_api/src/main/java/br/com/gregoriohd/service/ArquivoService.java
+/home/gregoriohd/software/applications/spring/essia_api/src/main/java/br/com/gregoriohd/service/DiretorioService.java

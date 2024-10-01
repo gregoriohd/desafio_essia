@@ -1,0 +1,9 @@
+br/com/gregoriohd/repository/ArquivoRepository.class
+br/com/gregoriohd/service/DiretorioService.class
+br/com/gregoriohd/entity/Diretorio.class
+br/com/gregoriohd/controller/ArquivoController.class
+br/com/gregoriohd/controller/DiretorioController.class
+br/com/gregoriohd/EssiaApiApplication.class
+br/com/gregoriohd/entity/Arquivo.class
+br/com/gregoriohd/repository/DiretorioRepository.class
+br/com/gregoriohd/service/ArquivoService.class
