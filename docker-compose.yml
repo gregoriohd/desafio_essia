@@ -1,7 +1,5 @@
-version: '3.8'
-
 services:
-  postgres:
+   db:
     image: postgres
     restart: always
     container_name: postgres
@@ -14,37 +12,29 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
-  backend:
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
-    container_name: spring_boot_api
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/essia_db
-      SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: postgres
-    ports:
-      - "8080:8080"
-    depends_on:
-      - postgres
-    networks:
-      - app-network
+   backend:
+     build:
+       context: ./backend
+       dockerfile: Dockerfile
+     container_name: essia_backend_api
+     environment:
+       SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/essia_db
+       SPRING_DATASOURCE_USERNAME: postgres
+       SPRING_DATASOURCE_PASSWORD: postgres
+     ports:
+       - "8080:8080"
+     depends_on:
+       - db
 
-  frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
-    container_name: essia_frontend
-    ports:
-      - "8081:8080"
-    depends_on:
-      - backend
-    networks:
-      - app-network
+   frontend:
+     build:
+       context: ./frontend
+       dockerfile: Dockerfile
+     container_name: essia_frontend
+     ports:
+       - "8081:8080"
+     depends_on:
+       - backend
 
 volumes:
   postgres_data:
-
-networks:
-  app-network:
-    driver: bridge

@@ -4,7 +4,7 @@
   "author": "gregorio santos",
   "private": true,
   "scripts": {
-    "start": "vue-cli-service serve --port 8081",
+    "start": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
