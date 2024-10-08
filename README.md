@@ -26,8 +26,9 @@ Para usar a API frontend, utilize o endereço que será exibido no console:
 
 Para usar a API backend, siga estas etapas utilizando cliente API REST de sua escolha:
 
-# Adicionando o diretório raiz.:
+# Adicionando o diretório raiz:
 Forneça um objeto Json com o atributo nome e seu valor, como no exemplo.
+
 POST http://localhost:8080/api/diretorios
 ```json
 {
@@ -35,8 +36,9 @@ POST http://localhost:8080/api/diretorios
 }
 ```
 # Adicionando subdiretorio:
-POST http://localhost:8080/api/diretorios
 Forneça um objeto Json com o atributo nome e seu valor e um objeto diretorioPai com o atributo id como no exemplo.
+
+POST http://localhost:8080/api/diretorios
 ```json
 {
   "nome": "SUBDIRETORIO",
@@ -47,10 +49,12 @@ Forneça um objeto Json com o atributo nome e seu valor e um objeto diretorioPai
 ```
 # Removendo diretório ou subdiretorio:
 Adicione ao final da url um valor inteiro para remover o diretório desejado.
+
 DELETE http://localhost:8082/api/diretorios/1
 
 # Adicionando arquivo a um diretorio raiz:
 Forneça um objeto Json com o atributo nome e tipo e seus valores, e ao final da url um valor inteiro para especificar o diretório desejado para adicionar o arquivo, como no exemplo.
+
 POST http://localhost:8080/api/arquivos/diretorios/1
 ```json
 {
@@ -60,6 +64,7 @@ POST http://localhost:8080/api/arquivos/diretorios/1
 ```
 # Removendo diretório ou subdiretorio:
 Adicione ao final da url um valor inteiro para remover o arquivo desejado.
+
 DELETE http://localhost:8080/api/arquivos/diretorios/1
 
 
