@@ -62,7 +62,7 @@ POST http://localhost:8080/api/arquivos/diretorios/1
     "tipo": "pdf"
 }
 ```
-# Removendo diretório ou subdiretorio:
+# Removendo arquivo:
 Adicione ao final da url um valor inteiro para remover o arquivo desejado.
 
 DELETE http://localhost:8080/api/arquivos/diretorios/1
