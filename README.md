@@ -55,7 +55,7 @@ DELETE http://localhost:8082/api/diretorios/1
 # Adicionando arquivo a um diretorio raiz:
 Forneça um objeto Json com o atributo nome e tipo e seus valores, e ao final da url um valor inteiro para especificar o diretório desejado para adicionar o arquivo, como no exemplo.
 
-POST http://localhost:8080/api/arquivos/diretorios/1
+POST http://localhost:8080/api/arquivos/diretorios/:id
 ```json
 {
     "nome": "arquivo.pdf",
@@ -65,7 +65,7 @@ POST http://localhost:8080/api/arquivos/diretorios/1
 # Removendo arquivo:
 Adicione ao final da url um valor inteiro para remover o arquivo desejado.
 
-DELETE http://localhost:8080/api/arquivos/diretorios/1
+DELETE http://localhost:8080/api/arquivos/diretorios/:id
 
 
 
